@@ -6,3 +6,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .active_under_line {
+        @apply  relative block after:h-1 after:w-full after:-bottom-10 after:left-0 after:absolute after:bg-white;
+    }
+    .links{
+         @apply py-[40px] px-6 cursor-pointer lg:p-0;
+    }
+}
